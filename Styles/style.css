@@ -12,7 +12,7 @@ body {
     box-sizing: border-box;
 }
 .container{
-    max-width: 1400px;
+    width: 84%; ;
     margin: 0 auto;
     padding: 0 12px;
 }
@@ -85,6 +85,7 @@ a,.fa-chevron-down{
 }
 .contents_myaccounts{
     padding-right: 0;
+    position: relative;
 }
 .header_link:hover{
     color: var(--hover-color);
@@ -93,6 +94,38 @@ a,.fa-chevron-down{
     color: var(--hover-color);
 }
 
+
+.account_popup_menu{
+    padding: 10px 8px;
+    width: 100%;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    position: absolute;
+    list-style: none;
+    background-color: white;
+    transition: all 0.5s ease;
+    bottom: -250px;
+}
+.link_log{
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+
+}
+.link_log:hover{
+    color: var(--theme-deafult);
+}
+
+.account_contents{
+    margin: 10px 0;
+}
+.contents_myaccounts:hover .account_popup_menu{
+    opacity: 100%;
+    bottom: -90px;
+}
 /*Header Menu*/
 
 .header_bgcolor{
@@ -166,6 +199,14 @@ a,.fa-chevron-down{
     display: block;
     margin-left: 9px;
 }
+/*Header PopUp Menu*/
+
+/*Home Menu*/
+
+
+
+
+
 /*Slider*/
 .bg_slider{
     background-image: url("../Files/Images/9.jpg");
@@ -212,6 +253,11 @@ a,.fa-chevron-down{
     padding: 13px 29px;
     background-color: var(--theme-deafult);
     border: 2px solid var(--theme-deafult);
+}
+.slider_button:hover{
+    color: black;
+    background-color: white;
+
 }
 /*Company Section*/
 .logo_company{
